@@ -14,7 +14,8 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(21) // Minecraft 1.21 re
 
 repositories {
     mavenCentral()
-    maven { url = 'https://maven.neoforged.net/releases' }
+    maven { url = 'https://maven.neoforged.net/releases' } // NeoForge repository
+    maven { url = 'https://repo.maven.apache.org/maven2' } // Apache Maven central repository
 }
 
 minecraft {
