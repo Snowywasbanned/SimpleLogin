@@ -2,7 +2,7 @@ plugins {
     id 'java'
     id 'eclipse'
     id 'idea'
-    id 'net.neoforged.gradle.userdev' version '7.0.150' // Updated for 1.21.1
+    id 'net.neoforged.gradle.userdev' version '7.0.150' // Ensure this version is correct
     id 'net.neoforged.gradle.mixin' version '7.0.150'
 }
 
@@ -13,9 +13,8 @@ archivesBaseName = 'SimpleLogin-1.21.1'
 java.toolchain.languageVersion = JavaLanguageVersion.of(21) // Minecraft 1.21 requires Java 21
 
 repositories {
-    mavenCentral()
+    mavenCentral()  // Default Maven repository
     maven { url = 'https://maven.neoforged.net/releases' } // NeoForge repository
-    maven { url = 'https://repo.maven.apache.org/maven2' } // Apache Maven central repository
 }
 
 minecraft {
