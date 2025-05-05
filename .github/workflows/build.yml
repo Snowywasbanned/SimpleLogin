@@ -1,6 +1,7 @@
 name: Build and Test
 
 on:
+  workflow_dispatch:  # Allows manual triggering
   push:
     branches: [ '1.20.1' ]
   pull_request:
