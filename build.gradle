@@ -3,7 +3,7 @@ plugins {
     id 'eclipse'
     id 'idea'
     id 'net.neoforged.gradle.userdev' version '7.0.150' // Ensure this version is correct
-    id 'net.neoforged.gradle.mixin' version '7.0.150'
+    id 'net.neoforged.gradle.mixin' version '7.0.150' // Ensure this version is correct
 }
 
 version = '1.0.2'
@@ -14,7 +14,7 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(21) // Minecraft 1.21 re
 
 repositories {
     mavenCentral()  // Default Maven repository
-    maven { url = 'https://maven.neoforged.net/releases' } // NeoForge repository
+    maven { url = 'https://maven.neoforged.net' } // Correct NeoForge repository URL
 }
 
 minecraft {
